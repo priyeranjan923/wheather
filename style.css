@@ -240,7 +240,14 @@
     margin-bottom:1px;
 }
 
-@media screen and (max-width: 350px)
+
+
+
+
+
+
+/* first media */
+@media screen and (min-width:150px) and (max-width:350px)
 {
     #heading{
            font-size: larger;
@@ -250,7 +257,7 @@
         display: flex;
         flex-direction: column;
         max-width: 150px;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
     .tab{
         margin-top: 20px;
@@ -272,14 +279,23 @@
         letter-spacing: 0.6px;
         white-space: nowrap;
     }
-}
-@media screen and (max-width: 370px){
+    .form-container{
+        display: none;
+        width:90%;
+        max-width:550px;
+        
+        margin:0 auto;
+        justify-content: center;
+        align-items: center;
+        gap: 0 10px; 
+        margin-bottom: 1rem;
+    }
 
-    
-    .parameter-container{
+.parameter-container{
         /* width:90%; */
         display: flex;
         flex-direction: column;
+       
     }
      .parameter{
         width:70%;
@@ -289,7 +305,7 @@
         /* padding:1rem; */
         display: flex;
         gap:2px 0;
-        /* flex-direction: column; */
+        flex-direction: column;
         
     }   
          .parameter p:first-of-type{
@@ -308,14 +324,50 @@
             width:40px;
             height:20px;
         }
+        .form-container{
+            display: none;
+            width:90%;
+            max-width:550px;
+            margin:0 auto;
+            justify-content: center;
+            align-items: center;
+            gap: 0 10px; 
+            margin-bottom: 1rem;
+        }
+        .user-info-container p[data-temp] {
+            font-size:1.75rem;
+            font-weight:200;
+        }
+        .name{
+            display: flex;
+            /* flex-direction: column; */
+            /* justify-content: center; */
+            align-items: center;
+            gap: 0 0.5rem;
+            margin-bottom: 0.8rem;
+        }
+        .tino{
+            display: flex;
+        }
+        .tino p{
+            font-size:2rem;
+            align-items: center;
+        }
+        .tino img{
+            width: 50px;
+            height:50px;
+            object-fit: contain;
+        }
 
 
 }
 
-@media screen and (min-width:370px) and (max-width: 400px )  {
+
+@media screen and (min-width:350px) and (max-width: 400px )  {
     .parameter p:first-of-type{
         font-size: 1rem;
         font-weight: 210;
         white-space: nowrap;
     }
 }
+
